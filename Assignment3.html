@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>  Form Attribute</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body style="background-color: #0e7087">
+	<div>
+    <h1 style="font-style: bold, italic; color: black;">  FeedBack Form For Todays Session </h1></div>
+	<div>
+	<form target="_self" action="insert.java" method="GET" enctype="multipart/form-data" >
+		<fieldset>
+			<legend id="myLegend">Personalia:</legend>
+		<label>Name:</label>
+		<input type="text" name="name" autocomplete>
+		<br>	
+		<br>
+
+		<label> Email:</label>
+		<input type="Email" name="Email" autocomplete placeholder="example@gmail.com">
+			<br>
+				<br>
+			<label> Password:</label>
+			<input type="password" value="psw123">
+			<br>
+				<br>
+
+
+		<label> Mobile Number:</label>
+		<input type="Number" name="Number" autocomplete>
+			<br>
+			<br>
+			<label> Select file</label>
+		<input type="file" name="Number" multiple>
+			<br>
+<br>
+		<label> Male:</label>
+		<input type="checkbox" name="gender">
+			<br>
+			<label> Female:</label>
+		<input type="checkbox" name="gender">
+			<br>
+		
+			<label>
+				Select the State</label>
+			<select> 
+		<option> karnataka</option>
+		<option> karnataka</option>
+		<option> karnataka</option>
+
+</select>
+	<br>
+	<br>
+<label> Date</label>
+		<input type="Date" name="Number"> label> Time</label>
+
+		<input type="Time" name="Number">
+			<br>
+		<br>
+		<h4>To access a Local Datetime field</h4>
+
+<input type="datetime-local" id="myLocalDate" value="2021-11-11T15:25:33">
+
+<p>Click the button to get the local date and time of the datetime field.</p>
+
+<button onclick="myFunction()">Try it</button>
+<br>
+<br>
+		
+		<label> Address:</label>
+		<textarea>Type your adress</textarea>
+		<br>
+	<br>
+	<label> Select Your Favrouite Color:</label>
+		<input type="color" id="myColor">	
+		<br>
+		<br>
+		<label>Select Language on Which you want a session</label><input list="myDatalist"> 
+  <datalist id="myDatalist"> 
+    <option value="Java">
+    <option value="Python">
+    <option value="PHP">
+    <option value="DBMS">
+   
+  </datalist>
+  <br>
+		
+		<h3>Select the month and week you want to Start the Session
+		</h3>
+		<input type="month" id="myMonth" value="2014-05">
+	
+
+		<br>
+	<br>
+
+	<h3>Number Of Sessions You Want</h3>
+
+<input type="number" id="myNumber" value="2">
+
+<br>
+	<br>
+
+	<label> If u Agree the session was Excellent:</label>
+		<input type="Radio" name="session">
+			<br>
+		<br>
+		<h3>Please Rate the Session</h3>
+		<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+  <input type="range" id="a" value="50">100
+  +<input type="number" id="b" value="50">
+  =<output id="myOutput" name="x" for="a b"></output>
+</form>
+
+
+
+
+	<br>
+	<br>
+	
+
+<button style="size: 20px"> submit</button>
+	<br>
+	<br>
+	</fieldset>
+	</form>
+	</div>
+<div style="background-color: orange;">
+<h3>To know the Details about us Clik on Button</h3>
+
+<input type="hidden" id="myInput" value="Innoovatum, Bijapur, karnataka.">
+
+<button onclick="myFunction()">Clik Here</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myInput").value;
+  document.getElementById("demo").innerHTML = x;
+function myFunction() {
+  var x = document.getElementById("myOutput").name;
+  document.getElementById("demo").innerHTML = x;
+}
+}
+</script>
+
+	<h1> Any Queries related to the Form Can contact us through the email <button target="_self" style="background-color: #ffc107; border: 1px;"> <a href="lubnatahreem789@gmail.com">lubnatahreem789@gmail.com  </a></button></h1>
+
+<h3>Can Search for Frequently asked Questions</h3>
+
+<input type="search" id="mySearch" placeholder="Search for something..">
+<br>
+		<br>
+Google Homepage: <a href="http://www.google.com"></a>
+
+</div>
+
+</body>
+</html>
